@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Conversion</title>
+</head>
+<body>
+
+<h2>Temperature Conversion</h2>
+
+<form method="POST">
+
+    Temperature:
+    <input type="number" name="temp" step="any">
+    <br><br>
+
+    <input type="radio" name="choice" value="C">
+    Celsius to Fahrenheit
+    <br>
+
+    <input type="radio" name="choice" value="F">
+    Fahrenheit to Celsius
+    <br><br>
+
+    <input type="submit" value="Convert">
+
+</form>
+
+{% if result is defined %}
+    <p>{{ temp }} = {{ result }} {{ unit }}</p>
+{% endif %}
+
+</body>
+</html>

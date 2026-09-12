@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill</title>
+</head>
+<body>
+
+<h2>Electricity Bill</h2>
+
+<form method="POST">
+
+    Consumer Name:
+    <input type="text" name="name">
+    <br><br>
+
+    Consumer Number:
+    <input type="text" name="consumer_no">
+    <br><br>
+
+    Units Consumed:
+    <input type="number" name="units">
+    <br><br>
+
+    <input type="submit" value="Calculate Bill">
+
+</form>
+
+{% if bill is defined %}
+
+<h3>Bill Details</h3>
+
+<p>Consumer Name: {{ name }}</p>
+<p>Consumer Number: {{ consumer_no }}</p>
+<p>Units: {{ units }}</p>
+<p>Total Bill: ₹{{ bill }}</p>
+
+{% endif %}
+
+</body>
+</html>

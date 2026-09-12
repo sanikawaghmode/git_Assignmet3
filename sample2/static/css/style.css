@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.message {
+    color: red;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+<h2>Contact Form</h2>
+
+{% with messages = get_flashed_messages() %}
+
+    {% for message in messages %}
+
+        <p>{{ message }}</p>
+
+    {% endfor %}
+
+{% endwith %}
+
+
+<form method="POST">
+
+    <label>Name:</label>
+    <input type="text" name="name">
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email">
+    <br><br>
+
+    <label>Subject:</label>
+    <input type="text" name="subject">
+    <br><br>
+
+    <label>Message:</label>
+    <textarea name="message"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+
+</html>
